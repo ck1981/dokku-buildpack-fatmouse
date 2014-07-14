@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-if [ -f $1/requirements.txt ]; then
+BUILD_DIR=$1
+
+if [ -f $BUILD_DIR/requirements.txt ]; then
   echo "Fatmouse requirements"
   exit 0
 else
